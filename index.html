@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tutorzila Static</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+<link rel="stylesheet" href="theme/plugins/bootstrap/bootstrap.min.css">
+
+<link rel="stylesheet"
+  href="theme/plugins/themify-icons/themify-icons.css">
+<link href="theme/plugins/fontawesome/css/all.min.css" rel="stylesheet">
+<link href="theme/plugins/remixicon/remixicon.css" rel="stylesheet">
+
+
+<!-- Main Stylesheet -->
+<link href="theme/css/aos.css" rel="stylesheet">
+<link href="theme/css/style.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <div class="container-fluid  h-100" ng-app="app"
+    style="padding: 0; margin: 0; height: 100%">
+  <header id="main-header" class="sticky-top navigation"> 
+     <div class=container>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent bs-none py-0">
+      <a class="navbar-brand py-0" href="index.html"><img class="img-fluid" style="height:100px" src="images/FullLogo_Transparent.png" alt="tutorzila"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-align-right h4 text-dark"></i></button>
+      <div class="collapse navbar-collapse text-center" id=navigation>
+        <ul class="navbar-nav mx-auto align-items-center">   
+<!--          <li class="nav-item"><a class="nav-link" href="index.html">Find Tutors</a></li> -->
+<!--          <li class="nav-item"><a class="nav-link" href="index.html">Classes</a></li> -->
+<!--          <li class="nav-item"><a class="nav-link" href="index.html">Pricing</a></li> -->
+<!--          <li class="nav-item"><a class="nav-link" href="index.html">FAQ</a></li>          -->
+        </ul>
+        <a href="search-tutor.html" class="btn btn-outline-primary ml-lg-4">Find Tutors</a>
+        <a data-toggle="modal" data-target="#signInModal" class="btn btn-primary ml-lg-4"> Sign In</a>
+      </div>
+    </nav>
+  </div>
+
+</header>
+<!-- banner -->
+<section class="section pb-4">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-7 text-center text-lg-left">
+        <h2 class="mb-4">Find The Perfect Tutor</h2>
+        <p class="mb-4">Are you searching for a one on one tutor who can
+          provide your child with a tailored learning experience?</p>
+
+        <form class="search-wrapper" action="search.html">
+          <!--  <input id="search-by" name="s" type="search" class="form-control form-control-lg"
+            placeholder="Search Here..."> -->
+          <button type="submit" class="btn btn-primary">Get Started</button>
+        </form>
+      </div>
+      <div class="col-lg-5 d-lg-block">
+        <img src="images/banner-9.png" alt="illustration" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <section class="section pb-0"> -->
+<!--  <div class="container"> -->
+
+<!--    <h2 class="section-title">One-To-One Home Tuitions</h2> -->
+
+<!--    <div class="row"> -->
+<!--      <div class="col-lg-5 col-md-5 d-lg-block d-none"> -->
+<!--        <img src="images/banner-13.png" alt="illustration" class="img-fluid"> -->
+<!--      </div> -->
+<!--      <div class="col-lg-7 col-md-7"> -->
+<!--        <div class="classes-div mt-5"> -->
+<!--          <div class="classes-body mb-4"> -->
+<!--            <nav> -->
+<!--              <div class="nav nav-tabs nav-fill border-0" id="nav-tab" -->
+<!--                role="tablist"> -->
+<!--                <a class="nav-link active nav-item classes-nav" -->
+<!--                  data-toggle="tab" data-target="#section1" role="tab"> Class -->
+<!--                  K - 2 </a> <a class="nav-link nav-item classes-nav" -->
+<!--                  data-toggle="tab" data-target="#section2" role="tab"> Class -->
+<!--                  3 - 5 </a> <a class="nav-link nav-item classes-nav" -->
+<!--                  data-toggle="tab" data-target="#section3" role="tab"> Class -->
+<!--                  6 - 8 </a> -->
+<!--              </div> -->
+<!--            </nav> -->
+<!--          </div> -->
+<!--          <div class="classes-body"> -->
+<!--            <div class="tab-content text-center"> -->
+<!--              <div class="tab-pane active" id="section1" role="tabpanel" -->
+<!--                data-aos="zoom-in" data-aos-delay="200"> -->
+<!--                <p class="classes-p">Tutorzila brings the magic of fun -->
+<!--                  learning to kids in grades K-2, helping them unlock their full -->
+<!--                  potential. Designed to align with CBSE, ICSE, IB, and IGCSE -->
+<!--                  syllabi, our program encompasses a comprehensive range of -->
+<!--                  subjects, including Mathematics, Science, Hindi, English, -->
+<!--                  Kannada, EVS, and SST, tailored for students in grades K-2.</p> -->
+
+<!--              </div> -->
+<!--              <div class="tab-pane" id="section2" role="tabpanel" -->
+<!--                data-aos="zoom-in" data-aos-delay="200"> -->
+<!--                <p class="classes-p">Tutorzila specializes in guiding grade -->
+<!--                  3-5th students through their foundational years, leveraging the -->
+<!--                  expertise of certified tutors and an elite curriculum. Tailored -->
+<!--                  to the CBSE, ICSE, IB, and IGCSE syllabi, our program for -->
+<!--                  grades 3-5th encompasses a wide range of subjects, such as -->
+<!--                  Mathematics, Science, Hindi, English, Kannada, EVS, and SST, -->
+<!--                  ensuring a holistic education.</p> -->
+<!--              </div> -->
+<!--              <div class="tab-pane" id="section3" role="tabpanel" -->
+<!--                data-aos="zoom-in" data-aos-delay="200"> -->
+<!--                <p class="classes-p">Tutorzila is the ultimate destination -->
+<!--                  for grade 6-8 students during these pivotal years of education. -->
+<!--                  Designed to meet the requirements of CBSE, ICSE, IB, and IGCSE -->
+<!--                  syllabi, our curriculum for grades 6-8 includes essential -->
+<!--                  subjects like Mathematics, Science, Hindi, English, Kannada, -->
+<!--                  and SST, ensuring a well-rounded education.</p> -->
+<!--              </div> -->
+<!--            </div> -->
+<!--          </div> -->
+<!--          <div -->
+<!--            class="classes-footer d-flex justify-content-center align-items-center p-2"> -->
+<!--            <button type="button" id="savetutor" -->
+<!--              class="btn btn-outline-primary m-1" ng-click="createTutor()">Book -->
+<!--              Free Demo</button> -->
+<!--          </div> -->
+
+<!--        </div> -->
+<!--      </div> -->
+
+<!--    </div> -->
+<!--  </div> -->
+<!-- </section> -->
+<!-- <section class="section pb-4"> -->
+<!--  <div class="container"> -->
+<!--    <h2 class="section-title">The New Way To Learn</h2> -->
+<!--    <div class=row> -->
+<!--      <div class="col-lg-7 col-md-7"> -->
+<!--        <p class="classes-p" data-aos="zoom-in" data-aos-delay="200">Tutorzila -->
+<!--          focuses on delivering in-person tutoring to ensure every student -->
+<!--          receives individualized care and attention. Our mission is to -->
+<!--          assist individuals, including those in need of fundamental literacy -->
+<!--          skills and those seeking personalized support to enhance their -->
+<!--          competitiveness. Our curriculum is meticulously tailored to meet -->
+<!--          the specific requirements of each student, informed by extensive -->
+<!--          research and analysis.</p> -->
+<!--        <div class="row"> -->
+<!--          <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300"> -->
+<!--            <div class="d-flex feature-card"> -->
+<!--              <span> <img src="images/home-tutor-1.png" -->
+<!--                alt="illustration" class="img-fluid"> -->
+<!--              </span> <span class="feature-card-span">Home Tutoring to Students</span> -->
+<!--            </div> -->
+<!--          </div> -->
+<!--          <div class="col-md-6  mb-4" data-aos="zoom-in" data-aos-delay="300"> -->
+<!--            <div class="d-flex feature-card"> -->
+<!--              <span> <img src="images/teaching-icon.png" -->
+<!--                alt="illustration" class="img-fluid"> -->
+<!--              </span> <span class="feature-card-span">Personalized Learning</span> -->
+<!--            </div> -->
+<!--          </div> -->
+<!--          <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400"> -->
+<!--            <div class="d-flex feature-card"> -->
+<!--              <span> <img src="images/certified-teacher.png" -->
+<!--                alt="illustration" class="img-fluid"> -->
+<!--              </span> <span class="feature-card-span">Trained & Certified -->
+<!--                Tutors</span> -->
+<!--            </div> -->
+<!--          </div> -->
+<!--          <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400"> -->
+<!--            <div class="d-flex feature-card"> -->
+<!--              <span> <img src="images/assessment.png" alt="illustration" -->
+<!--                class="img-fluid"> -->
+<!--              </span> <span class="feature-card-span">Monthly Assessments & -->
+<!--                Worksheets</span> -->
+<!--            </div> -->
+<!--          </div> -->
+<!--          <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500"> -->
+<!--            <div class="d-flex feature-card"> -->
+<!--              <span> <img src="images/Curriculum-1.png" -->
+<!--                alt="illustration" class="img-fluid"> -->
+<!--              </span> <span class="feature-card-span">Comprehensive Curriculum</span> -->
+<!--            </div> -->
+<!--          </div> -->
+<!--          <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500"> -->
+<!--            <div class="d-flex feature-card"> -->
+<!--              <span> <img src="images/Subscriptionnew.png" -->
+<!--                alt="illustration" class="img-fluid"> -->
+<!--              </span> <span class="feature-card-span">Monthly Subscription -->
+<!--                Plans</span> -->
+<!--            </div> -->
+<!--          </div> -->
+<!--        </div> -->
+<!--      </div> -->
+<!--      <div class="col-lg-5 col-md-5 d-lg-block d-none"> -->
+<!--        <img src="images/banner-14.png" alt="illustration" class="img-fluid" -->
+<!--          style="height: 90%; margin: 20px"> -->
+<!--      </div> -->
+
+<!--    </div> -->
+<!--  </div> -->
+<!-- </section> -->
+<!-- <section class="section bg-white mb-4 counts"> -->
+<!--  <div class="container"> -->
+<!--    <div class="row align-items-center"> -->
+<!--      <div class="col-lg-3 col-md-6 col-sm-6 mb-4"> -->
+<!--        <div class="count-box card " data-wow-duration="600ms"> -->
+<!--          <i class="fa-solid fa-face-smile"></i><span -->
+<!--          class="timer counter alt-font appear" data-speed="7000">300</span> -->
+<!--          <p>Happy Clients</p> -->
+<!--        </div> -->
+<!--      </div> -->
+<!--      <div class="col-lg-3 col-md-6 col-sm-6 mb-4"> -->
+<!--        <div class="count-box card" data-wow-duration="600ms"> -->
+<!--          <i class="fa-solid fa-house"></i> <span -->
+<!--          class="timer counter alt-font appear" data-speed="7000">300</span> -->
+<!--          <p>Home Tutors</p> -->
+<!--        </div> -->
+<!--      </div> -->
+<!--      <div class="col-lg-3 col-md-6 col-sm-6 mb-4"> -->
+<!--        <div class="count-box card" data-wow-duration="600ms"> -->
+<!--          <i class="fa-solid fa-globe"></i> <span -->
+<!--          class="timer counter alt-font appear" data-speed="7000">300</span> -->
+<!--          <p>Online Tutors</p> -->
+<!--        </div> -->
+<!--      </div> -->
+<!--      <div class="col-lg-3 col-md-6 col-sm-6 mb-4"> -->
+<!--        <div class="count-box card" data-wow-duration="600ms"> -->
+<!--          <i class="fa-solid fa-clipboard"></i><span -->
+<!--          class="timer counter alt-font appear" data-speed="7000">300</span> -->
+<!--          <p>Tuition Jobs</p> -->
+<!--        </div> -->
+<!--      </div> -->
+
+<!--    </div> -->
+<!--  </div> -->
+<!-- </section> -->
+<section class="section pb-4">
+  <div class="container">
+    <div class="row">
+      <!-- topic -->
+      <div class="col-lg-5 d-lg-block">
+        <img src="images/banner-8.png" alt="illustration" class="img-fluid">
+      </div>
+      <div class="col-lg-7 col-md-7 col-sm-12 mb-4">
+        <h2 class="section-title">Get An Expert Tutor Now</h2>
+
+        <div data-aos="fade-up" data-aos-delay="500"
+          class="single-feature d-flex mb-4">
+          <div class="feature-content">
+            <span class="feature-content-icon"><i
+              class="fa-solid fa-pen-to-square"></i> Post Requirement </span>
+            <p>Share your learning requirements with us, and we'll find
+              the perfect tutor to match your needs and help you succeed.</p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="500"
+          class="single-feature d-flex mb-4">
+          <div class="feature-content">
+            <span class="feature-content-icon"><i
+              class="fa-solid fa-person-chalkboard"></i> Get Free Demo </span>
+            <p>Schedule a free demo session with a nearby Tutorzila
+              certified tutor today and experience the difference in your
+              child's learning journey.</p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="500"
+          class="single-feature d-flex mb-4">
+          <div class="feature-content">
+            <span class="feature-content-icon"><i
+              class="fa-regular fa-handshake"></i> Start Learning </span>
+            <p>After a successful demo session, select the ideal plan that
+              suits your needs, and embark on your learning journey with our
+              dedicated tutor</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- <section class="section pb-0"> -->
+<!--  <div class="container"> -->
+<!--    <h2 class="section-title">Talk To Our Counselor</h2> -->
+<!--    <div class="row"> -->
+<!--      <!-- topic -->
+-->
+<!--      <div class="col-lg-4 col-md-4 col-sm-12 mb-4"> -->
+<!--        <div class="card match-height"> -->
+<!--          <div class="card-body"> -->
+<!--            <h6>Direct Call Us</h6> -->
+<!--            <p>You can call us at +91-8971126362 to tell us about your -->
+<!--              learning needs.</p> -->
+<!--          </div> -->
+<!--          <div -->
+<!--            class="card-footer action-footer justify-content-between align-items-center text-center"> -->
+<!--            <a href="tel:+918971126362" class="stretched-link"><i -->
+<!--              class="fa-solid fa-phone"></i>Call Now</a> -->
+<!--          </div> -->
+<!--        </div> -->
+<!--      </div> -->
+
+<!--      <div class="col-lg-4 col-md-4 col-sm-12 mb-4"> -->
+<!--        <div class="card match-height"> -->
+<!--          <div class="card-body"> -->
+<!--            <h6>Chat With Us</h6> -->
+<!--            <p>You can chat / WhatsApp us on +91-8971126362 for your -->
+<!--              learning needs.</p> -->
+<!--          </div> -->
+<!--          <div -->
+<!--            class="card-footer action-footer justify-content-between align-items-center text-center"> -->
+<!--            <a href="http://wa.link/uhcr5i" class="stretched-link"><i -->
+<!--              class="fa-brands fa-whatsapp"></i>Chat Now</a> -->
+<!--          </div> -->
+<!--        </div> -->
+<!--      </div> -->
+
+<!--      <div class="col-lg-4 col-md-4 col-sm-12 mb-4"> -->
+<!--        <div class="card match-height"> -->
+<!--          <div class="card-body"> -->
+<!--            <h6>Request Callback</h6> -->
+<!--            <p>You can request a callback and our expert will reach out to -->
+<!--              you.</p> -->
+<!--          </div> -->
+<!--          <div -->
+<!--            class="card-footer action-footer justify-content-between align-items-center text-center"> -->
+<!--            <a href="tel:+918971126362" class="stretched-link"><i -->
+<!--              class="fa-solid fa-headset"></i>Request Now</a> -->
+<!--          </div> -->
+<!--        </div> -->
+<!--      </div> -->
+
+
+<!--    </div> -->
+<!--  </div> -->
+<!-- </section> -->
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-5">
+        <h2 class="section-title">Meet Our Teachers</h2>
+        <p>At Tutorzila, we take pride in our team of highly qualified
+          and passionate educators. Our teachers are the backbone of our
+          commitment to providing quality education and personalized learning
+          experiences. Get to know the professionals who are dedicated to
+          helping your child succeed.</p>
+      </div>
+      <div class="col-md-7">
+        <div id="carouselExampleControls" class="carousel"
+          data-ride="carousel">
+          <div class="carousel-inner mb-4">
+            <div class="carousel-item active">
+              <div class="tutor-card">
+                <div class="img-wrapper text-center">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp"
+                    alt="avatar" style="width: 150px;" />
+                  <h6>Annu Singh</h6>
+                </div>
+
+                <div class="tutor-card-body">
+                  <div>
+                    <i class="fa-solid fa-book tutor-card-i"></i>Math,Science &
+                    English
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-graduation-cap tutor-card-i"></i>Teaches
+                    K-2 & 3-5
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-id-card-clip tutor-card-i"></i>3+ Years
+                    in Teaching
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="tutor-card">
+                <div class="img-wrapper text-center">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp"
+                    alt="avatar" style="width: 150px;" />
+                  <h6>Annu Singh</h6>
+                </div>
+
+                <div class="tutor-card-body">
+                  <div>
+                    <i class="fa-solid fa-book tutor-card-i"></i>Math,Science &
+                    English
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-graduation-cap tutor-card-i"></i>Teaches
+                    K-2 & 3-5
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-id-card-clip tutor-card-i"></i>3+ Years
+                    in Teaching
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="tutor-card">
+                <div class="img-wrapper text-center">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp"
+                    alt="avatar" style="width: 150px;" />
+                  <h6>Annu Singh</h6>
+                </div>
+
+                <div class="tutor-card-body">
+                  <div>
+                    <i class="fa-solid fa-book tutor-card-i"></i>Math,Science &
+                    English
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-graduation-cap tutor-card-i"></i>Teaches
+                    K-2 & 3-5
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-id-card-clip tutor-card-i"></i>3+ Years
+                    in Teaching
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <span class="tutor-control-prev tutor-control"
+                data-target="#carouselExampleControls" data-slide="prev"><i
+                class="fa-solid fa-circle-chevron-left"></i></span> <span
+                class="tutor-control-next tutor-control"
+                data-target="#carouselExampleControls" data-slide="next"><i
+                class="fa-solid fa-circle-chevron-right"></i></span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="section pb-0">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-7 text-center text-lg-left">
+        <h2 class="mb-4">Teach, Inspire, and Earn with Tutorzila</h2>
+        <p class="mb-4">Are you passionate about teaching and making a
+          positive impact on students' lives? Join Tutorzila as a tutor and
+          be part of our mission to provide quality education and
+          personalized learning experiences. Share your expertise, inspire
+          students, and help them reach their academic goals.</p>
+        <form class="search-wrapper" action="search.html">
+          <!--  <input id="search-by" name="s" type="search" class="form-control form-control-lg"
+            placeholder="Search Here..."> -->
+          <button type="submit" class="btn btn-primary">Register Now</button>
+        </form>
+      </div>
+      <div class="col-lg-5 d-lg-block d-none">
+        <img src="images/banner-11.png" alt="illustration" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section pb-4">
+  <div class="container">
+    <h2 class="section-title">Become A Certified Tutor With Us</h2>
+    <div class="row">
+      <!-- topic -->
+      <div class="col-lg-5 d-lg-block">
+        <img src="images/banner-12.png" alt="illustration" class="img-fluid">
+      </div>
+      <div class="col-lg-7 col-md-7 col-sm-12 mb-4">
+
+        <div class="single-feature d-flex mb-4">
+          <div class="feature-content">
+            <span class="feature-content-icon"><i
+              class="fa-solid fa-pen-to-square"></i> Create Profile </span>
+            <p>Register as a home tutor and we'll match you with the
+              perfect student that aligns with your profile.</p>
+          </div>
+        </div>
+        <div class="single-feature d-flex mb-4">
+          <div class="feature-content">
+            <span class="feature-content-icon"><i
+              class="fa-solid fa-person-chalkboard"></i> Quality Training </span>
+            <p>Prepare to elevate your teaching skills with our
+              specialized training program, tailored to enhance your lesson
+              delivery.</p>
+          </div>
+        </div>
+        <div class="single-feature d-flex mb-4">
+          <div class="feature-content">
+            <span class="feature-content-icon"><i
+              class="fa-regular fa-handshake"></i> Start Teaching </span>
+            <p>Provide a free demo session at student's home and get hired
+              to start your teaching journey.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- <section class="section"> -->
+<!--  <div class="container"> -->
+<!--    <h2 class="section-title">Join Our Tutorzila Community</h2> -->
+
+<!--    <div class="row align-items-center"> -->
+
+<!--      <div class="col-lg-8 text-lg-left text-center"> -->
+<!--        <div class="row"> -->
+<!--          <div class="col-lg-6 col-md-6 col-sm-12 mb-4"> -->
+<!--            <div class="card match-height"> -->
+<!--              <div class="card-body"> -->
+<!--                <h6>WhatsApp Group</h6> -->
+<!--                <p>You can join our WhatsApp group to stay connected with -->
+<!--                  us.</p> -->
+<!--              </div> -->
+<!--              <div -->
+<!--                class="card-footer action-footer justify-content-between align-items-center text-center"> -->
+<!--                <a href="https://chat.whatsapp.com/KCM4bjWAgDz0xNVAcGpefF" -->
+<!--                  target="_blank" class="stretched-link"><i -->
+<!--                  class="fa-brands fa-whatsapp"></i>Chat Now</a> -->
+<!--              </div> -->
+<!--            </div> -->
+<!--          </div> -->
+<!--          <div class="col-lg-6 col-md-6 col-sm-12 mb-4"> -->
+<!--            <div class="card match-height"> -->
+<!--              <div class="card-body"> -->
+<!--                <h6>Create Profile</h6> -->
+<!--                <p>Create your profile on tutorzila to start teaching.</p> -->
+<!--              </div> -->
+<!--              <div -->
+<!--                class="card-footer action-footer justify-content-between align-items-center text-center"> -->
+<!--                <a href="https://chat.whatsapp.com/KCM4bjWAgDz0xNVAcGpefF" -->
+<!--                  class="stretched-link"><i class="fa-brands fa-whatsapp"></i>Create -->
+<!--                  Now</a> -->
+<!--              </div> -->
+<!--            </div> -->
+<!--          </div> -->
+<!--        </div> -->
+<!--      </div> -->
+<!--      <div class="col-lg-4 text-center "> -->
+<!--        <img src="images/banner-6.png" class="img-fluid" alt=""> -->
+<!--      </div> -->
+<!--    </div> -->
+<!--  </div> -->
+<!-- </section> -->
+<!-- /call to action -->
+
+
+<section class="section pb-0 mb-4">
+  <div class="container">
+    <h2 class="section-title">What Our Parents Are Saying</h2>
+    <div class="row">
+      <!-- Carousel wrapper -->
+
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document"
+    ng-switch on="selection">
+    <div class="modal-content" ng-switch-when="Sign In">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal"
+          aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class="text-center">Sign In</h6>
+            <form name="signin" class="form-tz p-2">
+              <div class="form-content">
+                <div class="form-row m-2">
+                  <div class="form-group col-md-12">
+                    <label for="email">Email Address *</label> <input type="email"
+                      class="form-control" id="email" name="email"
+                      ng-model="user.email" required placeholder="Email Address">
+                    <span class="form-error"
+                      ng-show="signin.email.$error.required && signin.email.$dirty">Email
+                      address is required</span> <span class="form-error"
+                      ng-show="signin.email.$error.pattern">Email address
+                      not valid</span>
+
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="password"> Password *</label> <input
+                      type="password" class="form-control" id="password"
+                      name="password" ng-model="user.password" required
+                      placeholder="Password"> <span class="form-error"
+                      ng-show="signin.password.$error.required && signin.password.$dirty">Password
+                      is required</span>
+
+                  </div>
+                  <div class="form-group col-md-12">
+                    <button type="submit" class="btn btn-primary btn-block"
+                      ng-click="signIn()">Sign in</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <!--  <button type="submit" class="btn btn-primary btn-block"
+              ng-click="adminLogin()">Sign in</button> -->
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">
+          Not a member yet? <a href="" ng-click="activeForm('Sign Up')"
+            class="text-info"> Sign Up</a>.
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-content" ng-switch-when="Sign Up">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal"
+          aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class="text-center">Sign Up</h6>
+            <form name="signup" class="form-tz p-2">
+              <div class="form-content">
+                <div class="form-row m-2">
+                  <div class="form-group col-md-12">
+                    <label for="name">Name *</label> <input type="name"
+                      class="form-control" id="name" name="name"
+                      ng-model="user.name" required placeholder="Full Name">
+                    <span class="form-error"
+                      ng-show="signup.name.$error.required && signup.name.$dirty">Name
+                      is required</span>
+
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="email">Email *</label> <input type="email"
+                      class="form-control" id="email" name="email"
+                      ng-model="user.email" required placeholder="Email Address">
+                    <span class="form-error"
+                      ng-show="signin.email.$error.required && signin.email.$dirty">Email
+                      address is required</span> <span class="form-error"
+                      ng-show="signin.email.$error.pattern">Email address
+                      not valid</span>
+
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="phone">Phone *</label> <input type="text"
+                      class="form-control" id="phone" name="phone"
+                      ng-model="user.phone" required placeholder="Mobile Numer">
+                    <span class="form-error"
+                      ng-show="signup.phone.$error.required && signup.phone.$dirty">Phone
+                      number is required</span>
+
+                  </div>
+                  <div class="form-group col-md-12">
+                    <div class="row">
+                      <div class="col-6">
+                        <label class="w-100"> <input type="radio" name="type" value="PARENT"
+                          class="card-input-element d-none" ng-model="user.type" />
+                          <div class="user-type-card d-flex">
+                            <div class="">
+                              <span><i class="fa fa-envelope"></i> I am a Parent</span>
+                            </div>
+
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-6">
+                        <label class="w-100"> <input type="radio" name="type" value="TUTOR" ng-model="user.type"
+                          class="card-input-element d-none" />
+                          <div class="user-type-card d-flex">
+                            <div class="">
+                            <span><i class="fa fa-envelope"></i> I am a Tutor</span>
+                            
+                            </div>
+
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <span class="form-error"
+                      ng-show="signup.type.$error.required && signup.type.$dirty">User
+                      selection is required</span>
+
+                  </div>
+
+                  <div class="form-group col-md-12">
+                    <button type="submit" class="btn btn-primary btn-block"
+                      ng-click="signUp()">Sign Up</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <!--  <button type="submit" class="btn btn-primary btn-block"
+              ng-click="adminLogin()">Sign in</button> -->
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">
+          Already a registered user? <a href=""
+            ng-click="activeForm('Sign In')" class="text-info"> Sign In</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+
+
+   <div class="container">
+    <div class="row border-bottom">
+     <div class="col-xs-12 col-sm-4 col-md-4">
+        <!-- <a href="#">
+          <img class="img-fluid" src="images/FullLogo_Transparent.png" style="width:200px;">
+        </a> -->
+        <h5>About Tutorzila</h5>
+        <p class="p-0">Tutorzila is formed in 2023.</p>
+      </div>
+     <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.fiverr.com/share/qb8D02">Find Tutor</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02">Become Tutor</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02">Terms & Conditions</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02">Privacy Policy</a></li>
+          </ul>
+        </div>
+     
+     <div class="col-xs-12 col-sm-4 col-md-4">
+     <h5>Find Us</h5>
+          <ul class="list-unstyled quick-links">          
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-envelope"></i>info@tutorzila.com</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-phone"></i>+918971126362</a></li>
+          </ul>
+      
+        
+      </div>
+    </div>
+    <div class="row align-items-center">
+     <div class="col-lg-12 col-md-12 col-xs-12 p-2 text-center">
+     <ul class="list-inline social-icons ">
+          <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="ti-github"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+        </ul>
+     </div>
+    <div class="col-lg-12 col-md-12 col-xs-12 p-2 text-center">
+      <small class="text-light">Copyright © 2023 <a href="https://www.tutorzila.com">Tutorzila</a></small>
+    </div>
+    </div>
+    
+  
+  </div>
+  </footer>
+  </div>
+
+    <script src="theme/plugins/jQuery/jquery.min.js"></script>
+  <script src="theme/plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="theme/plugins/masonry/masonry.min.js"></script>
+  <script src="theme/plugins/clipboard/clipboard.min.js"></script>
+  <script src="theme/plugins/match-height/jquery.matchHeight-min.js"></script>
+  <!-- Main Script -->
+  <script src="theme/js/script.js"></script>
+  <script src="theme/js/aos.js"></script>
+</body>
+</html>
