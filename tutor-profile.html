@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tutorzila Static</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+<link rel="stylesheet" href="theme/plugins/bootstrap/bootstrap.min.css">
+
+<link rel="stylesheet"
+  href="theme/plugins/themify-icons/themify-icons.css">
+<link href="theme/plugins/fontawesome/css/all.min.css" rel="stylesheet">
+<link href="theme/plugins/remixicon/remixicon.css" rel="stylesheet">
+
+
+<!-- Main Stylesheet -->
+<link href="theme/css/aos.css" rel="stylesheet">
+<link href="theme/css/style.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+<div id="main-wrapper" class="container-fluid  h-100"
+    style="padding: 0; margin: 0; height: 100%">
+    
+    <header id="main-header"
+  class="sticky-top navigation"> 
+
+  <div class=container>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent bs-none py-0">
+      <a class="navbar-brand py-0" href="index.html"><img class="img-fluid" style="height:100px" src="/images/FullLogo_Transparent.png" alt="tutorzila"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-align-right h4 text-dark"></i></button>
+      <div class="collapse navbar-collapse text-center" id=navigation>
+        <ul class="navbar-nav mx-auto align-items-center">   
+          <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li> 
+          <li class="nav-item"><a class="nav-link" href="index.html">Students</a></li> 
+          <li class="nav-item"><a class="nav-link" href="index.html">Requests</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Messages</a></li>
+        </ul>
+                <a href="/search-tutor" class="btn btn-outline-primary ml-lg-4">My Profile</a>
+        <a href="" class="btn btn-primary ml-lg-4" ng-click="login()"> Sign Out</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12"></div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header" style="display: grid">
+            <div>
+              <span class="update-btn" data-toggle="modal" data-target="#personalModal" ><i
+                class="fa-solid fa-pen-to-square mr-5"></i>Update </span>
+            </div>
+            <div
+              class="rounded-circle justify-content-center align-items-center text-center mb-10">
+              <img class="shadow-1-strong mb-2 rounded-circle"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp"
+                alt="avatar" style="width: 150px;" />
+            </div>
+            <div
+              class="justify-content-center align-items-center text-center mb-10">
+              <h6>{{personalDetails.name}}</h6>
+              <span class="tutor-verify-span"><i
+                class="fa-solid fa-circle-exclamation"></i> Identity Not
+                Verified</span> <br> <span class="tutor-verify-link"> <a
+                href=""> Verify Now </a></span>
+            </div>
+
+          </div>
+          <div class="card-body">
+            <div>
+              <span class="tutor-name-span"><i
+                class="fa fa-envelope mr-10"></i>Email </span> <a
+                class="tutor-verify-link fr" href=""> Verify Now </a>
+              <p>{{personalDetails.email}}</p>
+
+            </div>
+            <div>
+              <span class="tutor-name-span"><i class="fa fa-phone mr-10"></i>Phone</span>
+              <span class="tutor-a-verified fr"><i
+                class="fa-solid fa-circle-check"></i> Verified </span>
+              <p>{{personalDetails.phone}}</p>
+
+            </div>
+            <div>
+              <span class="tutor-name-span"><i
+                class="fa-solid fa-venus-mars mr-10"></i>Gender</span>
+              <p>{{personalDetails.gender}}</p>
+
+            </div>
+
+            <div>
+              <span class="tutor-name-span"><i
+                class="fa-solid fa-location-dot mr-10"></i>Location</span>
+              <p>{{personalDetails.location}}</p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="col-md-8">
+
+        <div class="card">
+          <div class="card-header bg-main-light">
+            <ul class="nav tutor-nav">
+              <li class="tutor-profile-tab"
+                ng-class="{active: selectedTab == 1}"><a
+                ng-click="activeTab(1);">Overview</a></li>
+              <li class="tutor-profile-tab"
+                ng-class="{active: selectedTab == 2}"><a
+                ng-click="activeTab(2);">Reviews</a></li>
+
+            </ul>
+          </div>
+          <div class="card-body m-0 p-0">
+            <div class="row m-0 p-0" ng-show="selectedTab == 1">
+
+              <div class="col-12 mb-4" style="border-bottom: 5px solid #f5ebeb">
+                <div class="row p-25 m-0">
+                  <div class="col-12">
+                    <span class="update-btn" style="margin-top: -10px"><i
+                      class="fa-solid fa-pen-to-square mr-5"></i>Update </span>
+                    <h6>Tutoring Details</h6>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <span class="tutor-name-span"><i
+                      class="fa-solid fa-house mr-10"></i>Mode</span>
+
+                    <p>{{tutoringDetails.mode}}</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <span class="tutor-name-span"><i
+                      class="fa-solid fa-book mr-10"></i>Subjects</span>
+
+                    <p>{{tutoringDetails.subjects}}</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <span class="tutor-name-span"><i
+                      class="fa-solid fa-book-open-reader mr-10"></i>Classes</span>
+
+                    <p>{{tutoringDetails.grades}}</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <span class="tutor-name-span"><i
+                      class="fa-solid fa-graduation-cap mr-10"></i>Boards</span>
+
+                    <p>{{tutoringDetails.boards}}</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <span class="tutor-name-span"><i
+                      class="fa-solid fa-business-time mr-10"></i>Experience</span>
+
+                    <p>{{tutoringDetails.experience}} Years</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <span class="tutor-name-span"><i
+                      class="fa-solid fa-language mr-10"></i>Languages</span>
+
+                    <p>{{tutoringDetails.languages}}</p>
+                  </div>
+                  <div class="col-md-12 col-sm-12">
+                    <span class="tutor-name-span"><i
+                      class="fa-solid fa-address-card mr-10"></i>About</span>
+
+                    <p>{{tutoringDetails.description}}</p>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-12 mb-4" style="border-bottom: 5px solid #f5ebeb">
+                <div class="row p-25 m-0">
+                  <div class="col-12">
+                    <span class="update-btn" style="margin-top: -10px"><i
+                      class="fa-solid fa-circle-plus mr-5"></i>Add</span>
+                    <h6>Qualification Details</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 mb-4">
+                <div class="row p-25 m-0">
+                  <div class="col-12">
+                    <span class="update-btn" style="margin-top: -10px"><i
+                      class="fa-solid fa-circle-plus mr-5"></i>Add</span>
+                    <h6>Work Experience</h6>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+          </div>
+          <div class="row" ng-show="selectedTab == 2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<div class="modal fade" id="personalModal" tabindex="-1" role="dialog"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal"
+          aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form name="personalinfo" class="form-tz p-2" novalidate>
+
+          <div class="form-content">
+            <div class="form-row m-0">
+              <div class="form-group col-md-6">
+                <label for="pname"> Name *</label> <input type="text"
+                  class="form-control" id="pname" name="pname"
+                  ng-model="personalDetails.name" placeholder="Name" required>
+                <span class="form-error"
+                  ng-show="personalinfo.pname.$error.required && personalinfo.pname.$dirty">
+                  Parent name is required.</span>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Email Address *</label> <input type="email"
+                  class="form-control" id="email" name="email"
+                  ng-model="personalDetails.email" ng-pattern="eml_add" required
+                  placeholder="Email Address"> <span class="form-error"
+                  ng-show="personalinfo.email.$error.required && personalinfo.email.$dirty">Email
+                  address is required</span> <span class="form-error"
+                  ng-show="personalinfo.email.$error.pattern">Email
+                  address not valid</span>
+
+              </div>
+            </div>
+            <div class="form-row m-0">
+              <div class="form-group col-md-6">
+                <label for="phone"> Phone *</label> <input type="text"
+                  class="form-control" id="phone" name="phone"
+                  ng-model="personalDetails.phone" placeholder="Phone Number" required>
+                <span class="form-error"
+                  ng-show="personalinfo.phone.$error.required && personalinfo.phone.$dirty">
+                  Phone number is required.</span>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="gender"> Gender *</label> <select
+                      name="gender" class="form-control custom-select"
+                      ng-model="personalDetails.gender"
+                      ng-options="g.value as g.value for g in genders"
+                      required>
+                      <option disabled value="">Select Gender</option>
+                    </select> <span class="form-error"
+                      ng-show="personalinfo.gender.$dirty && personalinfo.gender.$invalid">Select
+                      board</span>
+              </div>
+            </div>
+            </div>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <script src="theme/plugins/jQuery/jquery.min.js"></script>
+  <script src="theme/plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="theme/plugins/masonry/masonry.min.js"></script>
+  <script src="theme/plugins/clipboard/clipboard.min.js"></script>
+  <script src="theme/plugins/match-height/jquery.matchHeight-min.js"></script>
+  <!-- Main Script -->
+  <script src="theme/js/script.js"></script>
+  <script src="theme/js/aos.js"></script>
+</body>
+
+</html>
